@@ -2,6 +2,8 @@
 
 A backend API playground powered by [Laravel](https://laravel.com) and created by [Stackcasts](https://www.stackcasts.com)
 
+View the sourcecode at: https://github.com/stackcasts/api-playground
+
 View the demo at: https://api-playground.stackcasts.com
 
 ## Goals

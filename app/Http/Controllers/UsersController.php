@@ -35,6 +35,17 @@ class UsersController extends Controller
         return response()->json($user, 200);
     }
 
+    public function update($id): JsonResponse
+    {
+        $user = User::where('id', $id)->firstOrFail();
+
+        $user->name = request('name');
+        $user->email = request('email');
+        $user->job_title = request('job_title');
+
+        return response()->json($user, 200);
+    }
+
     public function delete($id): JsonResponse
     {
         $user = User::where('id', $id)->firstOrFail();

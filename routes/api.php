@@ -9,3 +9,4 @@ Route::get('/', function() {
 Route::get('/users', 'UsersController@index');
 Route::get('/users/{id}', 'UsersController@show');
 Route::post('/users', 'UsersController@store');
+Route::delete('/users/{id}', 'UsersController@delete');

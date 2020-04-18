@@ -34,4 +34,11 @@ class UsersController extends Controller
 
         return response()->json($user, 200);
     }
+
+    public function delete($id): JsonResponse
+    {
+        $user = User::where('id', $id)->firstOrFail();
+
+        return response()->json('User was deleted.', 200);
+    }
 }

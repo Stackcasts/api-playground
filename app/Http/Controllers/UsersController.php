@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\User;
 use Symfony\Component\HttpFoundation\JsonResponse;
+use App\User;
 
 class UsersController extends Controller
 {
@@ -17,6 +17,20 @@ class UsersController extends Controller
     public function show($id): JsonResponse
     {
         $user = User::where('id', $id)->firstOrFail();
+
+        return response()->json($user, 200);
+    }
+
+    public function store(): JsonResponse
+    {
+        $user = new User();
+        $user->id = 98765;
+
+        $user->name = request('name');
+        $user->email = request('email');
+        $user->job_title = request('job_title');
+        $user->created_at = now();
+        $user->updated_at = now();
 
         return response()->json($user, 200);
     }

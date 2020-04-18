@@ -8,34 +8,7 @@ integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9If
 crossorigin="anonymous"
 />
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
-<style>
-  body {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    font-family: 'Roboto', sans-serif;
-  }
-  p {
-    font-size: 1.05em;
-    margin-bottom: 30px;
-  }
-  h1 {
-    margin-bottom: 30px;
-  }
-  h1, h2, h3, h4, h5, h6 {
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-  }
-  pre[class*="language-"] {
-    margin-bottom: 40px !important;
-  }
-  .content {
-    padding: 30px 20px;
-    margin-bottom: 40px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-  }
-</style>
+<link href="{{ asset('/css/app.css') }}" rel="stylesheet">
 </head>
 <body>
 <div class="container">

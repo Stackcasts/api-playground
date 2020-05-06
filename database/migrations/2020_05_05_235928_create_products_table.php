@@ -20,6 +20,8 @@ class CreateProductsTable extends Migration
             $table->longText('description');
             $table->string('price');
             $table->string('sale_price');
+            $table->string('currency_symbol');
+            $table->string('currency_code');
             $table->integer('inventory_count');
             $table->string('sku');
             $table->string('barcode');

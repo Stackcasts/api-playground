@@ -17,6 +17,8 @@ $factory->define(Product::class, function (Faker $faker) {
         'description' => $faker->paragraph(10),
         'price' => $price,
         'sale_price' => $salePrice,
+        'currency_symbol' => '$',
+        'currency_code' => 'USD',
         'inventory_count' => $faker->numberBetween(0, 1000),
         'sku' => 'SKU_' . $faker->numberBetween(0, 10000),
         'barcode' => $faker->numberBetween(999999999, 999999999999),

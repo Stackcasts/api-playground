@@ -13,3 +13,5 @@ Route::put('/users/{id}', 'UsersController@update');
 Route::delete('/users/{id}', 'UsersController@delete');
 
 Route::get('/products', 'ProductsController@index');
+
+Route::get('/orders', 'OrdersController@index');

@@ -11,7 +11,8 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        factory('App\User', 10)->create();
-        factory('App\Product', 200)->create();
+        factory('App\User', config('factories.users_total'))->create();
+        factory('App\Product', config('factories.products_total'))->create();
+        factory('App\Order', config('factories.orders_total'))->create();
     }
 }

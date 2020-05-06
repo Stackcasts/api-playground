@@ -8,6 +8,8 @@ use Tests\TestCase;
 
 class ProductsTest extends TestCase
 {
+    use RefreshDatabase;
+
     /** @test */
     public function there_should_be_a_products_index()
     {
